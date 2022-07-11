@@ -2,6 +2,55 @@
 
 A flight tracking application that allows a user to enter the airline, flight number, destination, and departure time for a flight.
 
+## Outlne for the App
+
+### Pages
+
+Homepage
+- Title
+- Link to add a flight
+- List of flights planned
+
+Add a flight
+- Form for each
+  - Title
+  - Airline
+  - Flight number
+  - Destination
+  - Departure time
+  - Inspo photo?
+
+Flight details
+- Title
+- Info entered
+- Edit button
+
+Edit page
+- Form for each
+  - Title
+  - Airline
+  - Flight number
+  - Destination
+  - Departure time
+  - Inspo photo?
+
+### Background
+Database to hold the info
+- Airlines
+  - Id
+  - Name
+
+- Flights
+ - Id
+ - Flight number
+ - Destination
+ - Departure time
+ - Airline id
+
+- Inspo photo held in the session via cookies?
+
+## Details
+
 Some things to think about:
 - Store data in a user's session or a file
 - Add validations to validate values submitted via forms (including flash messages)
