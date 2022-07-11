@@ -25,15 +25,18 @@ get "/" do
   redirect "/flights"
 end
 
+# View the list of flights
 get "/flights" do
   @flights = session[:flights]
   erb :flights, layout: :layout
 end
 
+# Render the new trip form
 get "/flights/new" do
   erb :new_trip, layout: :layout
 end
 
+# Create a new trip
 post "/flights" do
   session[:flights] << {name: params[:trip_name], destination: params[:destination_name], date: params[:flight_date].to_s}
   redirect "/flights"
