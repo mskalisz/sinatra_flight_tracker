@@ -31,6 +31,6 @@ get "/flights" do
 end
 
 get "/flights/new" do
-  session[:flights] << {name: "New Flight", date: []}
-  redirect "/lists"
+  session[:flights] << {name: "New Flight", date: "00.00.0000"}
+  redirect "/flights"
 end
