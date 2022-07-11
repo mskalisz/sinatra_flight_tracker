@@ -31,7 +31,7 @@ get "/flights" do
 end
 
 get "/flights/new" do
-  erb :new_flight, layout: :layout
+  erb :new_trip, layout: :layout
 end
 
 post "/flights" do
