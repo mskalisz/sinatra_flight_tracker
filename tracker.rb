@@ -30,3 +30,7 @@ get "/flights" do
   erb :flights, layout: :layout
 end
 
+get "/flights/new" do
+  session[:flights] << {name: "New Flight", date: []}
+  redirect "/lists"
+end
