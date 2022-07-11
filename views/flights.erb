@@ -1,0 +1,10 @@
+<ul id="flights">
+  <% @flights.each do |flight| %>
+    <li>
+      <a>
+        <h2><%= flight[:name] %></h2> 
+        <p><%= flight[:date][0]%></p>
+      </a>
+    </li>
+  <% end %>
+</ul>
