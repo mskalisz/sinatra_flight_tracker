@@ -35,6 +35,6 @@ get "/flights/new" do
 end
 
 post "/flights" do
-  session[:flights] << {name: params[:trip_name], date: params[:flight_date].to_s}
+  session[:flights] << {name: params[:trip_name], destination: params[:destination_name], date: params[:flight_date].to_s}
   redirect "/flights"
 end

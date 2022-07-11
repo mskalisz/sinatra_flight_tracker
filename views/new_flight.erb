@@ -1,17 +1,41 @@
 <form action="/flights" method="post">
   <dl>
     <dt>
-      <label for="trip_name">Enter the name for your trip:</label>
+      <label for="trip_name">Enter a name for your trip:</label>
     </dt>
     <dd>
       <input name="trip_name" placeholder="Trip Name" type="text" value="">
     </dd>
     <dt>
-    <label for="flight_date">Enter the date of your flight:</label>
-  </dt>
-  <dd>
-    <input name="flight_date" type="date" value="">
-  </dd>
+      <label for="destination_name">Enter your destination:</label>
+    </dt>
+    <dd>
+      <input name="destination_name" placeholder="Country or City" type="text" value="">
+    </dd>
+    <dt>
+      <label for="flight_date">Enter the date of your flight:</label>
+    </dt>
+    <dd>
+      <input name="flight_date" type="date" value="">
+    </dd>
+    <dt>
+      <label for="airline_name">Enter the airline that you will be flying:</label>
+    </dt>
+    <dd>
+      <input name="airline_name" placeholder="Airline" type="text" value="">
+    </dd>
+    <dt>
+      <label for="flight_number">Enter your flight number:</label>
+    </dt>
+    <dd>
+      <input name="flight_number" placeholder="ZZ123" type="text" value="">
+    </dd>
+    <dd> 
+      <label for="inspo_photo">Upload a photo for inspiration:</label>
+    </dd>
+    <dt>
+      <input type="file" id="inspo_photo" name="inspo_photo">
+    </dt>
   </dl>
   <fieldset class="actions">
     <input type="submit" value="Save">

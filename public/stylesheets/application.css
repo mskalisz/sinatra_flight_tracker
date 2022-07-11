@@ -128,6 +128,26 @@ form input[type="submit"]:hover {
   cursor: pointer; 
 }
 
+form input[type="file"] {
+  padding: 15px 20px;
+  margin: 0 40px 0 0;
+  font: normal 20px "PT Sans", Helvetica, Arial, sans-serif;
+  color: #666;
+  border: 1px solid #a4a4a4;
+  border-radius: 8px;
+  /* background: #4f8add; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-transition: background-color 200ms ease;
+  -moz-transition: background-color 200ms ease;
+  -o-transition: background-color 200ms ease; 
+}
+
+form input[type="file"]:hover {
+  /* background-color: #0035b0; */
+  cursor: pointer; 
+}
+
 form fieldset.actions a {
   color: #666666;
   -webkit-transition: color 200ms ease;
