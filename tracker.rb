@@ -31,6 +31,10 @@ get "/flights" do
 end
 
 get "/flights/new" do
-  session[:flights] << {name: "New Flight", date: "00.00.0000"}
+  erb :new_flight, layout: :layout
+end
+
+post "/flights" do
+  session[:flights] << {name: params[:trip_name], date: params[:flight_date].to_s}
   redirect "/flights"
 end

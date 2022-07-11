@@ -97,6 +97,17 @@ form input[type="text"] {
   box-sizing: border-box; 
 }
 
+form input[type="date"] {
+  width: 100%;
+  height: 58px;
+  padding: 15px 20px;
+  font: normal 20px "PT Sans", Helvetica, Arial, sans-serif;
+  border: 1px solid #a4a4a4;
+  border-radius: 8px;
+  box-sizing: border-box; 
+  color: #666666;
+}
+
 form input[type="submit"] {
   padding: 12px 45px;
   margin: 0 40px 0 0;
@@ -113,7 +124,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #d13b28;
+  background-color: #0035b0;
   cursor: pointer; 
 }
 
@@ -125,7 +136,7 @@ form fieldset.actions a {
 }
 
 form fieldset.actions a:hover {
-  color: #b00b00; 
+  color: #0035b0; 
 }
 
 .flash {
@@ -203,12 +214,12 @@ form fieldset.actions a:hover {
 
 #flights h2 {
   display: inline-block;
-  width: 92%; 
+  width: 30%; 
 }
 
 #flights p {
   display: inline-block;
-  width: 8%;
+  width: 10%;
   font-size: 0.9em;
   float: right;
   color: #666666; 
@@ -320,7 +331,7 @@ form fieldset.actions a:hover {
 }
 
 #date header ul button.delete:hover {
-  color: #b00b00; 
+  color: #0035b0; 
 }
 
 #date header ul button.delete:before {
@@ -348,7 +359,7 @@ form fieldset.actions a:hover {
   border-bottom: 1px solid #d7d7d7; 
 }
 
-# date > ul li a {
+#date > ul li a {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -356,13 +367,13 @@ form fieldset.actions a:hover {
   text-indent: -8685px; 
 }
 
-# date > ul li form {
+#date > ul li form {
   position: absolute;
   top: 50%;
   z-index: 1; 
 }
 
-# date > ul li .check {
+#date > ul li .check {
   left: -45px;
   height: 30px;
   margin: -15px 0 0 0; 
