@@ -39,5 +39,6 @@ end
 # Create a new trip
 post "/flights" do
   session[:flights] << {name: params[:trip_name], destination: params[:destination_name], date: params[:flight_date].to_s}
+  session[:success] = "Your trip has been created!"
   redirect "/flights"
 end
