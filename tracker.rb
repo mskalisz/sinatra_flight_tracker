@@ -38,7 +38,13 @@ end
 
 # Create a new trip
 post "/flights" do
-  session[:flights] << {name: params[:trip_name], destination: params[:destination_name], date: params[:flight_date].to_s}
-  session[:success] = "Your trip has been created!"
-  redirect "/flights"
+  trip_name = params[:trip_name].strip
+  if (1..50).cover? trip_name.size
+    session[:flights] << {name: trip_name, destination: params[:destination_name], date: params[:flight_date].to_s}
+    session[:success] = "Your trip has been created!"
+    redirect "/flights"
+  else
+    session[:error] = "This field must be between 1 and 50 characters."
+    erb :new_trip, layout: :layout
+  end
 end
